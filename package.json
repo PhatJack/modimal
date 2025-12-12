@@ -7,8 +7,18 @@
     "dev": "nuxt dev",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "prepare": "husky install",
     "lint": "eslint .",
+    "format": "prettier --write .",
     "typecheck": "nuxt typecheck"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,json,md,mdx,css,scss,vue}": [
+      "prettier --write"
+    ],
+    "**/*.{js,jsx,ts,tsx,vue}": [
+      "eslint --fix"
+    ]
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.74",
@@ -20,9 +30,16 @@
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.10.0",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.0",
     "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4",
+    "prettier-plugin-tailwindcss": "^0.7.2",
     "typescript": "^5.9.3",
-    "vue-tsc": "^3.1.5"
+    "vue-tsc": "^3.1.5",
+    "husky": "9.1.7"
   },
   "packageManager": "pnpm@10.23.0"
 }
