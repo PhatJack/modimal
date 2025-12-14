@@ -1,18 +1,44 @@
-@import "tailwindcss";
-@import "@nuxt/ui";
+@import 'tailwindcss';
+@import '@nuxt/ui';
 
 @theme static {
-  --font-sans: 'Public Sans', sans-serif;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-public-sans: 'Public Sans', sans-serif;
+  /* --font-montserrat: 'Montserrat', sans-serif; */
 
-  --color-green-50: #EFFDF5;
-  --color-green-100: #D9FBE8;
-  --color-green-200: #B3F5D1;
-  --color-green-300: #75EDAE;
-  --color-green-400: #00DC82;
-  --color-green-500: #00C16A;
-  --color-green-600: #00A155;
-  --color-green-700: #007F45;
+  --color-green-50: #effdf5;
+  --color-green-100: #d9fbe8;
+  --color-green-200: #b3f5d1;
+  --color-green-300: #75edae;
+  --color-green-400: #00dc82;
+  --color-green-500: #00c16a;
+  --color-green-600: #00a155;
+  --color-green-700: #007f45;
   --color-green-800: #016538;
-  --color-green-900: #0A5331;
-  --color-green-950: #052E16;
+  --color-green-900: #0a5331;
+  --color-green-950: #052e16;
+
+  --ui-color-primary-25: #f0f2ef;
+  --ui-color-primary-50: #d1d9cf;
+  --ui-color-primary-100: #b2bfaf;
+  --ui-color-primary-200: #a2b39f;
+  --ui-color-primary-300: #93a690;
+  --ui-color-primary-400: #839980;
+  --ui-color-primary-500: #748c70;
+  --ui-color-primary-600: #5a6d57;
+  --ui-color-primary-700: #404e3e;
+  --ui-color-primary-750: #343e32;
+  --ui-color-primary-800: #272f25;
+  --ui-color-primary-900: #0d100c;
+
+  --ui-color-success: #00966d --ui-color-success-light: #00ba88;
+  --ui-color-success-background: #f3fdfa;
+
+  --ui-color-warning: #e09126;
+  --ui-color-warning-light: #e09126;
+  --ui-color-warning-background: #f7e4c9;
+
+  --ui-color-error: #c30000;
+  --ui-color-error-light: #ed2e2e;
+  --ui-color-error-background: #fff2f2;
 }

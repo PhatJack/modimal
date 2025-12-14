@@ -12,8 +12,17 @@ export default withNuxt([
       prettier: eslintPluginPrettier,
     },
     rules: {
-      ...eslintPluginPrettier.configs.recommended.rules,
       'prettier/prettier': 'error',
+      "@typescript-eslint/no-empty-object-type": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_",
+        },
+      ],
     },
   },
 ])
